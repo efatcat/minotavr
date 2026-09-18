@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minotavr</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0b0b0b;
+      font-family: 'Unbounded', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      color: #e0e0e0;
+      font-weight: 300;
+    }
+
+    .card {
+      max-width: 760px;
+      width: 100%;
+      background: #111;
+      border: 1px solid #2a2a2a;
+      border-radius: 28px;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 400;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #d4af37;
+      margin-bottom: 2.75rem;
+      line-height: 1.2;
+      word-break: break-word;
+    }
+
+    .game-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .game-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #181818;
+      border-radius: 60px;
+      padding: 1.1rem 1.5rem 1.1rem 2rem;
+      transition: background 0.15s ease, border-color 0.15s ease;
+      border: 1px solid #2a2a2a;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .game-card:hover {
+      background: #1f1f1f;
+      border-color: #3a3a3a;
+    }
+
+    .game-card.new {
+      border-color: #4a3c1a;
+      background: #1a1710;
+    }
+
+    .game-card.new:hover {
+      background: #221e14;
+      border-color: #6b5524;
+    }
+
+    .game-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .game-title {
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #eee;
+    }
+
+    .game-badge {
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #d4af37;
+    }
+
+    .game-url {
+      font-size: 0.85rem;
+      color: #6a6a6a;
+      font-family: 'Unbounded', system-ui, sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.3px;
+      background: #0d0d0d;
+      padding: 0.45rem 1rem;
+      border-radius: 40px;
+      border: 1px solid #262626;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 560px) {
+      .card {
+        padding: 1.8rem 1.2rem;
+        border-radius: 22px;
+      }
+      h1 {
+        font-size: 2rem;
+        letter-spacing: 3px;
+        margin-bottom: 2rem;
+      }
+      .game-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 1.2rem 1.2rem;
+        border-radius: 32px;
+      }
+      .game-title {
+        font-size: 1.35rem;
+      }
+      .game-url {
+        font-size: 0.7rem;
+        width: 100%;
+        text-align: center;
+        padding: 0.35rem 0.5rem;
+        white-space: normal;
+        word-break: break-all;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Minotavr</h1>
+
+    <div class="game-links">
+      <!-- Minotavr 2 — новая версия, показывается первой -->
+      <a href="https://efatcat.github.io/minotavr2" class="game-card new" target="_blank" rel="noopener noreferrer">
+        <div class="game-info">
+          <div class="game-title">Minotavr 2</div>
+          <div class="game-badge">Новая версия</div>
+        </div>
+        <div class="game-url">efatcat.github.io/minotavr2</div>
+      </a>
+
+      <!-- Minotavr 1 -->
+      <a href="https://efatcat.github.io/minotavr1" class="game-card" target="_blank" rel="noopener noreferrer">
+        <div class="game-info">
+          <div class="game-title">Minotavr 1</div>
+        </div>
+        <div class="game-url">efatcat.github.io/minotavr1</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
